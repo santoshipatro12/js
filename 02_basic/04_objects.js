@@ -4,7 +4,7 @@ const tinderUser ={}                 //non Singleton obj
  tinderUser.id="123abc"
  tinderUser.name ="santoshi"
  tinderUser.isLoggedIn =false
-console.log(tinderUser);
+// console.log(tinderUser);
 
 const regularUser ={
     email: "santoshi@gmail.com",
@@ -31,8 +31,34 @@ const users =[
     },
 ]
 // users[1].email
-console.log(tinderUser);
-console.log(Object.values(tinderUser)); //type => array
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.values(tinderUser)); //type => array
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course ={
+    courseName: "js",
+    coursePrice : "999",
+    instructor :"hitesh sir",
+}
+// course.instructor
+
+const {instructor : inst}= course
+console.log(inst);
+
+// const navbar =(props.company) =>{
+                                                //   curly braces matlab object deconstruct
+// }
+// navbar(company ="santoshi")
+
+// {
+//     "courseName": "js",
+//     "coursePrice" : "999",
+//     "instructor" :"hitesh sir",
+// }                                        json struct object
+// [
+//     {},
+//     {},                           array wala json
+//     {}
+// ]
